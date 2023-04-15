@@ -6,9 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="vehicles-SachinMulgir" />
         <module name="vehicles-solution" />
-        <module name="java-assignment-testing-solution" />
         <module name="vehicles-driver-code" />
+        <module name="java-assignment-testing-solution" />
       </profile>
     </annotationProcessing>
   </component>
