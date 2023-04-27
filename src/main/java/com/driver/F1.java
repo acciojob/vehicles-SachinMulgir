@@ -7,7 +7,7 @@ public class F1 extends Car {
 
     public F1(){
         this.name = "";
-        this.isManual = true;
+        this.isManual = false;
     }
     public F1(String name, boolean isManual) {
         //Use arbitrary values for parameters which are not mentioned
@@ -49,26 +49,26 @@ public class F1 extends Car {
         currentSpeed = newSpeed;
         if(newSpeed == 0) {
             stop();
-            super.gears = 1;
+            super.currentGear = 1;
             //Stop the car, set gear as 1
         }
         else if( newSpeed > 0 && newSpeed <= 50) {
-            super.gears = 1;
+            super.currentGear = 1;
         }
         else if( newSpeed > 50 && newSpeed <= 100 ){
-            super.gears = 2;
+            super.currentGear = 2;
         }
         else if( newSpeed > 100 && newSpeed <= 150 ){
-            super.gears = 3;
+            super.currentGear = 3;
         }
         else if( newSpeed > 150 && newSpeed <= 200 ){
-            super.gears = 4;
+            super.currentGear = 4;
         }
         else if( newSpeed > 200 && newSpeed <= 250 ){
-            super.gears = 5;
+            super.currentGear = 5;
         }
         else{
-            super.gears = 6;
+            super.currentGear = 6;
         }
     }
 

@@ -6,7 +6,7 @@ public class Car extends Vehicle {
     private int doors;
     protected int gears;
     private boolean isManual;
-    private int currentGear;
+    public int currentGear;
     private int seats;
 
     public Car(){    }
