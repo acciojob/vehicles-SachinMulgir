@@ -11,6 +11,26 @@ public class F1 extends Car {
         this.isManual = isManual;
     }
 
+    @Override
+    public String getName() {
+        return name;
+    }
+
+    @Override
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    @Override
+    public boolean isManual() {
+        return isManual;
+    }
+
+    @Override
+    public void setManual(boolean manual) {
+        isManual = manual;
+    }
+
     public void accelerate(int rate){
         int newSpeed = currentSpeed + rate; //set the value of new speed by using currentSpeed and rate
         /**
