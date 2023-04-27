@@ -4,6 +4,15 @@ public class Boat implements WaterVehicle {
     private String name;
     private int capacity;
 
+    public Boat() {
+        this.name = "";
+        this.capacity = 0;
+    }
+
+    public Boat(String name, int capacity) {
+        this.name = name;
+        this.capacity = capacity;
+    }
 
     @Override
     public String getVehicleName() {
